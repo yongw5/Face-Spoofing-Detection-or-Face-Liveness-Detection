@@ -1,5 +1,8 @@
 # Face-Spoofing-Detection-Using-Color-Texture-Analysis
-This is a C++ code for face anti-spoofing methods based on color texture features. If you find it useful please cite the following papers:
+This is a C++ code for face anti-spoofing methods based on color texture features. 
+The code run on VS2013 with OpenCV3.0.0.
+
+If you find it useful please cite the following papers:
 
 @inproceedings{boulkenafet2015, title={Face anti-spoofing based on color texture analysis}, author={Boulkenafet, Zinelabidine and Komulainen, Jukka and Hadid, Abdenour}, booktitle={IEEE International Conference on Image Processing (ICIP), 2015}, pages={2636--2640}, year={2015}, organization={IEEE} }
 

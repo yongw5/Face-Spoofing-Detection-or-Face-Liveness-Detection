@@ -71,7 +71,7 @@ int SingalChannleImageDoG(const Mat& input_image, const Vec2d& vec_sigma, Mat& d
   Mat difference_image = Mat::zeros(gaussian_image1.rows, gaussian_image1.cols, CV_32FC1);
   for (int i = 0; i < difference_image.rows; i++) {
     for (int j = 0; j < difference_image.cols; j++) {
-      difference_image.at<float>(i, j) = (float)abs((gaussian_image1.at<uchar>(i, j) - gaussian_image2.at<uchar>(i, j)));
+      difference_image.at<float>(i, j) = (float)abs((gaussian_image1.at<float>(i, j) - gaussian_image2.at<float>(i, j)));
     }
   }
   difference_image.copyTo(dog_image);

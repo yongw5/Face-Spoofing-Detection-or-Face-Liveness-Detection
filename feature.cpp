@@ -101,7 +101,7 @@ int LBP(const vector<Mat>& vector_dog, vector<Mat>& vector_lbp){
     return FAILURE;
   }
   for (int i = 0; i < vector_dog.size(); ++i) {
-    Mat output_temp = Mat(vector_dog[i].rows - 2, vector_dog[i].cols - 2, CV_8UC3);
+    Mat output_temp = Mat(vector_dog[i].rows - 2, vector_dog[i].cols - 2, CV_8UC1);
     float center_value = 0;
     uchar code = 0;
     for (int row = 1; row < vector_dog[i].rows - 1; ++row) {

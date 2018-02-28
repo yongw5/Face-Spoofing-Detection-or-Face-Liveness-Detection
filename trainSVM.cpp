@@ -17,8 +17,7 @@ int VectorOfMat2Mat(vector<Mat> vector_mat, Mat& output_mat);
 const vector<Vec2d> vector_sigma = { Vec2d(0.5, 1), Vec2d(1, 2), Vec2d(0.5,2)};
 int main() {
   const string src_folder = "F:/VS2013_Project/DOG_LBP_SVM";
-
-  const string train_image_list = src_folder + "/train_image_list.txt";
+  const string train_image_list = src_folder + "/train_image_list.txt"; //the txt file contains the image name or relative path
   vector<Mat> hist_temp;
   vector<Mat> label_temp;
   CreateFeature(train_image_list, src_folder, hist_temp, label_temp);
@@ -65,7 +64,7 @@ void CreateFeature(const string& image_list, const string& src_folder,
   if (fid_image_list.is_open()) {
 	while (!fid_image_list.eof()) {
 	  fid_image_list >> line;
-	  image_path = src_folder + '/' + line;
+	  image_path = src_folder + '/' + line; // get the image absolute path
 	  cout << "reading......" << line.substr(line.rfind('\\') + 1, line.length()) << endl;
 	  try {
 		read_image = imread(image_path, IMREAD_COLOR);

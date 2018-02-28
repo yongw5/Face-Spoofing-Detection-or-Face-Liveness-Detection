@@ -56,7 +56,7 @@ int main() {
 }
 
 void CreateFeature(const string& image_list, const string& src_folder,
-				   vector<Mat>& hist_temp, vector<Mat>& label_temp) {
+		   vector<Mat>& hist_temp, vector<Mat>& label_temp) {
   
   ifstream fid_image_list;
   string line, image_path;

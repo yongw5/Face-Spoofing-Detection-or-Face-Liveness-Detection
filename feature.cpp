@@ -125,7 +125,7 @@ int LBP(const vector<Mat>& vector_dog, vector<Mat>& vector_lbp){
 }
 int LBP2Histogram(const vector<Mat>& vector_lbp, Mat& output_histogram) {
   if (vector_lbp.empty()) {
-	cout << "the inout image is empty" << endl;
+	cout << "the input image is empty" << endl;
 	return FAILURE;
   }
   Mat hist = Mat::zeros(1, 256 * vector_lbp.size(), CV_32FC1);
